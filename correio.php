@@ -63,7 +63,7 @@ class Correio {
 			$temp = null;
 			// Formata as linhas e gera um vetor
 			foreach($mat as $item){
-				if (preg_match("@<td rowspan=[12]>(.*)</td><td>(.*)</td><td><FONT COLOR=\"[0-9A-F]{6}\">(.*)</font></td>@", $item[0], $d)){
+				if (preg_match("@<td rowspan=[12]>(.*)</td><td>(.*)</td><td><font color=\"[0-9A-F]{6}\">(.*)</font></td>@", $item[0], $d)){
 					// Cria uma linha de track
 					$tmp = array(
 						'data' => $d[1],
